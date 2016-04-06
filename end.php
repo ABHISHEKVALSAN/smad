@@ -126,7 +126,7 @@ session_start();
                   <li class="user-body">
                    
                     <div class="pull-right">
-                      <a href="login.html" class="btn btn-default btn-flat">Sign out</a>
+                      <a href="index.html" class="btn btn-default btn-flat">Sign out</a>
                     </div>
                     
                   </li>

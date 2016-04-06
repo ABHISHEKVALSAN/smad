@@ -67,7 +67,7 @@
             
             </div>
             <div class="pull-right info">
-              <p>USER NAME</p>
+              <p></p>
               <a href="#"><i class="fa fa-circle text-success"></i> Online</a>
             </div>
           </div>

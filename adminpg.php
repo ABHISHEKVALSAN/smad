@@ -68,23 +68,7 @@ session_start();
                   <i class="fa fa-bell-o"></i>
                   <span class="label label-warning">**</span>
                 </a>
-                <ul class="dropdown-menu">
-                  <li class="header">You have notifications</li>
-                  <li>
-                    <!-- inner menu: contains the actual data -->
-                    <ul class="menu">
-                                     
-                     
-                     
-                      <li>
-                        <a href="#">
-                          <i class="fa fa-user text-red"></i> You changed your username
-                        </a>
-                      </li>
-                    </ul>
-                  </li>
-                  <li class="footer"><a href="#">View all</a></li>
-                </ul>
+               
               </li>
               <!-- Tasks: style can be found in dropdown.less -->
               
@@ -115,7 +99,7 @@ session_start();
                       <a href="profile0.php" class="btn btn-default btn-flat">Profile</a>
                     </div> 
                     <div class="pull-right">
-                      <a href="login.html" class="btn btn-default btn-flat">Sign out</a>
+                      <a href="index.html" class="btn btn-default btn-flat">Sign out</a>
 
                     </div>
                     
@@ -241,7 +225,7 @@ echo "</table>";
 
 ?>
 
-<h2>LIST OF FREE SUPERVISORS</h2>
+<h2>LIST OF NEW SUPERVISORS</h2>
  <?php
 
 include 'config.php' ;

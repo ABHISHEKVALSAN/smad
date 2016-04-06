@@ -146,7 +146,7 @@ while($row = mysqli_fetch_array($result))
                       <a href="profile1.php" class="btn btn-default btn-flat">Profile</a>
                     </div> 
                     <div class="pull-right">
-                      <a href="login.html" class="btn btn-default btn-flat">Sign out</a>
+                      <a href="index.html" class="btn btn-default btn-flat">Sign out</a>
                     </div>
                     
                   </li>
@@ -312,7 +312,7 @@ echo "</table>";
 
 ?>
 
-<h2>List of free members</h2>
+<h2>List of new members</h2>
  <?php
 
 include 'config.php' ;

@@ -43,6 +43,6 @@ include 'config.php' ;
 
     else
     {
-        header('Location:login.html');   
+        header('Location:index.html');   
     }
 ?>
