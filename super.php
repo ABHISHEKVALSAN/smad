@@ -264,56 +264,52 @@ while($row = mysqli_fetch_array($result))
   echo "</td> <td>";
   $status=$row['status'];
   if($status<20){
-   echo <<<EOT
+   echo '
    <td>
     <div class="progress">
-                <div class="progress-bar progress-bar-red" role="progressbar" aria-valuenow="15" aria-valuemin="0" aria-valuemax="100" style="width: 40%">
-                  <span class="sr-only">15% Complete</span>
+                <div class="progress-bar progress-bar-red" role="progressbar" aria-valuenow="'.$status.'" aria-valuemin="0" aria-valuemax="100" style="width: 40%">
+                  <span class="sr-only">'.$status.'% Complete</span>
                 </div>
               </div>
   </td>
 </tr>
 
-EOT;
+';
 }
 elseif($status>20&&$status<50){
-  echo <<<EOT
+  echo '
    <td>
     <div class="progress">
-                <div class="progress-bar progress-bar-yellow" role="progressbar" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100" style="width: 40%">
-                  <span class="sr-only">40% Complete</span>
+                <div class="progress-bar progress-bar-yellow" role="progressbar" aria-valuenow="'.$status.'" aria-valuemin="0" aria-valuemax="100" style="width: 40%">
+                  <span class="sr-only">'.$status.'% Complete</span>
                 </div>
               </div>
   </td>
-</tr>
-
-EOT;
+</tr>';
 }
 elseif($status>50&&$status<90){
-  echo <<<EOT
+  echo '
    <td>
     <div class="progress">
-                <div class="progress-bar progress-bar-aqua" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100" style="width: 40%">
-                  <span class="sr-only">80% Complete</span>
+                <div class="progress-bar progress-bar-aqua" role="progressbar" aria-valuenow="'.$status.'" aria-valuemin="0" aria-valuemax="100" style="width: 40%">
+                  <span class="sr-only">'.$status.'% Complete</span>
                 </div>
               </div>
   </td>
 </tr>
 
-EOT;
+';
 }
 elseif($status>90){
-  echo <<<EOT
+  echo '
    <td>
     <div class="progress">
-                <div class="progress-bar progress-bar-green" role="progressbar" aria-valuenow="95" aria-valuemin="0" aria-valuemax="100" style="width: 40%">
-                  <span class="sr-only">95% Complete</span>
+                <div class="progress-bar progress-bar-green" role="progressbar" aria-valuenow="'.$status.'" aria-valuemin="0" aria-valuemax="100" style="width: 40%">
+                  <span class="sr-only">'.$status.'% Complete</span>
                 </div>
               </div>
   </td>
-</tr>
-
-EOT;
+</tr>';
 }
 
 echo "</table>";
